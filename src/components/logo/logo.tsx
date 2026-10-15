@@ -34,9 +34,10 @@ export function Logo({
       className={mergeClasses([logoClasses.root, className])}
       sx={[
         {
-          width: 40,
-          height: 40,
-          ...(!isSingle && { width: 102, height: 36 }),
+          // JP_logo.png is a wide wordmark (~6:1), so the box follows that shape
+          width: 180,
+          height: 30,
+          ...(!isSingle && { width: 216, height: 36 }),
           ...(disabled && { pointerEvents: 'none' }),
         },
         ...(Array.isArray(sx) ? sx : [sx]),
@@ -45,7 +46,7 @@ export function Logo({
     >
       <Box
         component="img"
-        src="/assets/images/justpress-logo.svg"
+        src="/assets/images/JP_logo.png"
         alt="JustPress Ecommerce logo"
         sx={{
           width: '100%',
