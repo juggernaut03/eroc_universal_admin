@@ -72,15 +72,15 @@ export function PincodeDialog({ open, pincode, onClose, onSuccess }: PincodeDial
       return false;
     }
 
-    // Validate pincode format (exactly 6 digits)
+    // Validate postcode format (Indian 6-digit pincode or Malaysian 5-digit postcode)
     if (!pincodeValue.trim()) {
       setError('Pincode is required');
       return false;
     }
 
-    const pincodeRegex = /^\d{6}$/;
+    const pincodeRegex = /^\d{5,6}$/;
     if (!pincodeRegex.test(pincodeValue.trim())) {
-      setError('Pincode must be exactly 6 digits');
+      setError('Postcode must be 5 or 6 digits');
       return false;
     }
 
@@ -167,8 +167,8 @@ export function PincodeDialog({ open, pincode, onClose, onSuccess }: PincodeDial
             value={pincodeValue}
             onChange={handlePincodeChange}
             required
-            placeholder="Enter 6-digit pincode"
-            helperText={`${pincodeValue.length}/6 digits`}
+            placeholder="Enter postcode"
+            helperText={`${pincodeValue.length} digits (5 or 6)`}
             slotProps={{
               htmlInput: {
                 maxLength: 6,

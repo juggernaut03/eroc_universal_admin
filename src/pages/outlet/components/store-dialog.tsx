@@ -121,10 +121,10 @@ export function StoreDialog({ open, store, onClose, onSuccess }: StoreDialogProp
 
     // Pincode is legacy on Store now — which pincodes a store serves is
     // assigned from Outlet > Pincodes (many pincodes -> one store), not set
-    // here. Still validated as a real 6-digit code when one is entered, but
+    // here. Still validated as a real 5- or 6-digit code when one is entered, but
     // no longer required to create or save a store.
-    if (pincode.trim() && !/^\d{6}$/.test(pincode.trim())) {
-      setError('Pincode must be exactly 6 digits');
+    if (pincode.trim() && !/^\d{5,6}$/.test(pincode.trim())) {
+      setError('Postcode must be 5 or 6 digits');
       return false;
     }
 
@@ -244,7 +244,7 @@ export function StoreDialog({ open, store, onClose, onSuccess }: StoreDialogProp
                     label="Pincode (legacy, optional)"
                     value={pincode}
                     onChange={handlePincodeChange}
-                    placeholder="Enter 6-digit pincode"
+                    placeholder="Enter postcode"
                     helperText="Assign the pincodes this store serves from Outlet > Pincodes instead"
                     slotProps={{
                       htmlInput: {
