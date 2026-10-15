@@ -1,4 +1,4 @@
-# Shalvi Advision - E-commerce Admin Panel
+# JustPress Ecommerce - Admin Panel
 
 
 > Modern React Admin Dashboard for managing e-commerce operations, built with Material-UI, TypeScript, and Vite.js.
@@ -56,7 +56,7 @@
 
 ```bash
 # Clone the repository
-git clone https://github.com/Shalvi-Advision/ECOM_ADMIN_PANEL.git
+git clone https://github.com/juggernaut03/eroc_universal_admin.git
 
 # Navigate to project directory
 cd admin_panel
@@ -207,7 +207,7 @@ Distributed under the [MIT](./LICENSE.md) license.
 
 ## 👥 Contact
 
-**Shalvi Advision**
+**JustPress Ecommerce**
 
 For issues, questions, or contributions, please open an issue on the GitHub repository.
 

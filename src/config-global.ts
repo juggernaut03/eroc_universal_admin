@@ -17,7 +17,7 @@ export type ConfigValue = {
 };
 
 export const CONFIG: ConfigValue = {
-  appName: 'Shalvi Advision',
+  appName: 'JustPress Ecommerce',
   appVersion: packageJson.version,
   apiBaseUrl: import.meta.env.VITE_API_BASE_URL || 'http://localhost:5008',
   previewOrigin: import.meta.env.VITE_PREVIEW_ORIGIN || '',

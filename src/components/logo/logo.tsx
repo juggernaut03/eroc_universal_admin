@@ -45,8 +45,8 @@ export function Logo({
     >
       <Box
         component="img"
-        src="/assets/images/shalvi-logo.jpg"
-        alt="Shalvi Advision logo"
+        src="/assets/images/justpress-logo.svg"
+        alt="JustPress Ecommerce logo"
         sx={{
           width: '100%',
           height: '100%',

@@ -10,7 +10,7 @@ export default function Page() {
       <title>{`Dashboard - ${CONFIG.appName}`}</title>
       <meta
         name="description"
-        content="Centralized analytics and monitoring hub for the Shalvi Advision admin dashboard."
+        content="Centralized analytics and monitoring hub for the JustPress Ecommerce admin dashboard."
       />
       <meta name="keywords" content="react,material,kit,application,dashboard,admin,template" />
 

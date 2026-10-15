@@ -37,7 +37,7 @@ const SECRET_FIELDS = [
   {
     key: 'picker_webhook_secret',
     label: 'Picker Webhook Secret',
-    hint: 'Sent as X-Webhook-Secret on every order handed off to SHALVI PICKER, and required on status updates it sends back.',
+    hint: 'Sent as X-Webhook-Secret on every order handed off to JustPress Picker, and required on status updates it sends back.',
   },
 ];
 
@@ -305,7 +305,7 @@ export default function Page() {
         <Grid size={{ xs: 12 }}>
           <Card sx={{ p: 3 }}>
             <Typography variant="h6" sx={{ mb: 0.5 }}>
-              SHALVI PICKER
+              JustPress Picker
             </Typography>
             <Typography variant="body2" sx={{ color: 'text.secondary', mb: 3 }}>
               Warehouse picking + rider delivery. When enabled, an order is handed off the moment a
@@ -321,13 +321,13 @@ export default function Page() {
                     onChange={setPickerEnabled}
                   />
                 }
-                label="Enable SHALVI PICKER integration"
+                label="Enable JustPress Picker integration"
               />
               <TextField
                 fullWidth
                 size="small"
                 label="Picker Webhook URL"
-                placeholder="https://pickerapi.shalviadvision.com"
+                placeholder="https://apilogistics.erocventures.tech"
                 helperText="Base URL of the Picker backend — orders are POSTed to <this>/api/webhook/order"
                 value={values.picker_webhook_url ?? ''}
                 onChange={setValue('picker_webhook_url')}
