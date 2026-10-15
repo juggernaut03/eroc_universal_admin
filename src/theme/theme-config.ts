@@ -36,29 +36,33 @@ export const themeConfig: ThemeConfig = {
   /** **************************************
    * Palette
    *************************************** */
+  // Brand colors taken from the JustPress website
   palette: {
+    // JustPress navy (logo, footer, active tabs)
     primary: {
-      lighter: '#D0ECFE',
-      light: '#73BAFB',
-      main: '#1877F2',
-      dark: '#0C44AE',
-      darker: '#042174',
+      lighter: '#E1EAF4',
+      light: '#4A7DB5',
+      main: '#184E85',
+      dark: '#0F3A66',
+      darker: '#012B3D',
       contrastText: '#FFFFFF',
     },
+    // JustPress crimson ("See All" buttons, accent icons)
     secondary: {
-      lighter: '#EFD6FF',
-      light: '#C684FF',
-      main: '#8E33FF',
-      dark: '#5119B7',
-      darker: '#27097A',
+      lighter: '#FFF0F2',
+      light: '#E11D48',
+      main: '#A41743',
+      dark: '#7E0F33',
+      darker: '#4F0720',
       contrastText: '#FFFFFF',
     },
+    // JustPress bright blue ("Explore" buttons, badges)
     info: {
-      lighter: '#CAFDF5',
-      light: '#61F3F3',
-      main: '#00B8D9',
-      dark: '#006C9C',
-      darker: '#003768',
+      lighter: '#EFF6FF',
+      light: '#749AF4',
+      main: '#2463EB',
+      dark: '#1D4ED8',
+      darker: '#1E3A8A',
       contrastText: '#FFFFFF',
     },
     success: {
@@ -85,17 +89,18 @@ export const themeConfig: ThemeConfig = {
       darker: '#7A0916',
       contrastText: '#FFFFFF',
     },
+    // Cool slate greys matching the website (text #0F172A, borders #DDE1E9)
     grey: {
-      '50': '#FCFDFD',
-      '100': '#F9FAFB',
-      '200': '#F4F6F8',
-      '300': '#DFE3E8',
-      '400': '#C4CDD5',
-      '500': '#919EAB',
-      '600': '#637381',
-      '700': '#454F5B',
-      '800': '#1C252E',
-      '900': '#141A21',
+      '50': '#FAFBFD',
+      '100': '#F4F7FB',
+      '200': '#E9EEF5',
+      '300': '#DDE1E9',
+      '400': '#C2CAD6',
+      '500': '#94A3B8',
+      '600': '#64748B',
+      '700': '#475569',
+      '800': '#0F172A',
+      '900': '#020617',
     },
     common: { black: '#000000', white: '#FFFFFF' },
   },

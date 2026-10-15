@@ -22,12 +22,13 @@ const MuiButton: Components<Theme>['MuiButton'] = {
     disableElevation: true,
   },
   styleOverrides: {
+    // Default contained buttons use the JustPress navy, like the website's main buttons
     containedInherit: ({ theme }) => ({
       color: theme.vars.palette.common.white,
-      backgroundColor: theme.vars.palette.grey[800],
+      backgroundColor: theme.vars.palette.primary.main,
       '&:hover': {
         color: theme.vars.palette.common.white,
-        backgroundColor: theme.vars.palette.grey[800],
+        backgroundColor: theme.vars.palette.primary.dark,
       },
     }),
     sizeLarge: {

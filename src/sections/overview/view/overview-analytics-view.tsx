@@ -297,8 +297,8 @@ export function OverviewAnalyticsView() {
             value={formatCurrency(overview.revenue.total)}
             subtitle={`This month: ${formatCurrency(overview.revenue.thisMonth)}`}
             icon="eva:trending-up-fill"
-            gradient="linear-gradient(135deg, #667eea 0%, #764ba2 100%)"
-            iconBg="linear-gradient(135deg, #764ba2 0%, #667eea 100%)"
+            gradient="linear-gradient(135deg, #184E85 0%, #012B3D 100%)"
+            iconBg="linear-gradient(135deg, #012B3D 0%, #184E85 100%)"
           />
         </Grid>
 
@@ -308,8 +308,8 @@ export function OverviewAnalyticsView() {
             value={overview.orders.total}
             subtitle={`Today: ${overview.orders.today} orders`}
             icon="solar:cart-3-bold"
-            gradient="linear-gradient(135deg, #f093fb 0%, #f5576c 100%)"
-            iconBg="linear-gradient(135deg, #f5576c 0%, #f093fb 100%)"
+            gradient="linear-gradient(135deg, #E11D48 0%, #A41743 100%)"
+            iconBg="linear-gradient(135deg, #A41743 0%, #E11D48 100%)"
           />
         </Grid>
 
@@ -319,8 +319,8 @@ export function OverviewAnalyticsView() {
             value={overview.users.total}
             subtitle={`New this month: ${overview.users.newThisMonth}`}
             icon="solar:check-circle-bold"
-            gradient="linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)"
-            iconBg="linear-gradient(135deg, #00f2fe 0%, #4facfe 100%)"
+            gradient="linear-gradient(135deg, #2463EB 0%, #126699 100%)"
+            iconBg="linear-gradient(135deg, #126699 0%, #2463EB 100%)"
           />
         </Grid>
       </Grid>
